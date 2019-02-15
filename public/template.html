@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  {{{ meta.inject().title.text() }}}
+  {{{ meta.inject().meta.text() }}}
+  <script src="http://47.106.251.178:8082/static/js/polyfill.min.js"></script>
+  <script src="http://47.106.251.178:8082/static/js/jquery-1.12.4.min.js"></script>
+  <style>
+    html,
+    body {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div class="IE-warning">
+    <span title="IE8及前代浏览器存在严重安全隐患，同时缺少网站必要功能支持。" style="font-weight:400;font-size: 14px;text-align: center;">
+      你正在使用 Internet Explorer 8
+      或更早的浏览器，缺少网站所需的必要功能，请更换现代浏览器浏览</span>
+  </div>
+  <style>
+    body {
+      padding-top: 20px;
+    }
+    .IE-warning {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      width: 100%;
+      background-color: rgb(253, 253, 223);
+      color: black;
+      text-align: center;
+      font-size: 20px;
+      font-family: "Microsoft YaHei";
+      padding: 5px;
+    }
+  </style>
+  <![endif]-->
+
+  <!--vue-ssr-outlet-->
+</body>
+{{{meta.inject().script.text()}}}
+
+</html>
